@@ -25,4 +25,5 @@ class AESCipher(object):
 
 if __name__ == '__main__':
     aes_chipper = AESCipher("rnop3TnHwJ7P9zzLb0Z3qUjfhu1Cx9bW", "YsiebTh0Sjr8dZKo")
-    print(aes_chipper.encrypt('Enes'))
+    enc_text = aes_chipper.encrypt('Enes')
+    print(aes_chipper.decrypt(enc_text))
